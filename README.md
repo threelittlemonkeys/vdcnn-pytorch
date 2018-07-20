@@ -1,4 +1,4 @@
-# Very Deep Convolutional Networks (VDCNNs) in PyTorch
+# VDCNNs in PyTorch
 
 A PyTorch implementation of Very Deep Convolutional Networks (VDCNNs) for text classification.
 
