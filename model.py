@@ -44,7 +44,8 @@ class vdcnn(nn.Module):
             nn.ReLU(),
             nn.Linear(2048, num_labels)
         )
-
+        self.softmax = nn.LogSoftmax(1)
+        
         if CUDA:
             self = self.cuda()
 
@@ -55,7 +56,7 @@ class vdcnn(nn.Module):
         h = self.res_blocks(h) # residual blocks
         h = h.topk(self.k)[0].view(BATCH_SIZE, -1) # k-max pooling
         h = self.fc(h) # fully connected layers
-        y = F.log_softmax(h, 1)
+        y = self.softmax(h)
         return y
 
 class res_block(nn.Module): # residual block
