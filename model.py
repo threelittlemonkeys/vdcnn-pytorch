@@ -45,7 +45,7 @@ class vdcnn(nn.Module):
             nn.Linear(2048, num_labels)
         )
         self.softmax = nn.LogSoftmax(1)
-        
+
         if CUDA:
             self = self.cuda()
 
