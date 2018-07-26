@@ -33,4 +33,4 @@ python evaluate.py model.epochN word_to_idx tag_to_idx test_data
 
 ## References
 
-Alexis Conneau, Holger Schwenk, Loïc Barrault, Yann Lecun. 2017. [Very Deep Convolutional Networks for Text Classification.](https://arxiv.org/abs/1606.01781) arXiv:1606.01781 [cs.CL].
+Alexis Conneau, Holger Schwenk, Loïc Barrault, Yann Lecun. 2017. [Very Deep Convolutional Networks for Text Classification.](https://arxiv.org/abs/1606.01781) arXiv:1606.01781.
